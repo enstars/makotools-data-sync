@@ -1,0 +1,19 @@
+name: "makotools-data-sync"
+description: "Sync data from Google Sheets to JSON files"
+author: "kamishirorui"
+inputs:
+  sheet-ids:
+    description: "google sheet ids, separated with commas"
+    required: true
+  repo:
+    description: "name of repo for filtering sheets"
+    required: true
+  search_key:
+    description: "key for search api"
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"
+branding:
+  icon: "box"
+  color: "yellow"
